@@ -116,7 +116,7 @@ group by category,item_name
 order by count(order_id) asc
 limit 1
 
--- 11.What were the top 5 orders that spent the most money?
+-- 11. What were the top 5 orders that spent the most money?
 with combine_table as(
                       select m.*, o.* 
                       from menu_items m join order_details o
